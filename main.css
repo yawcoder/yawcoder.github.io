@@ -6,6 +6,7 @@
     list-style: none;
     box-sizing: border-box;
 }
+
 body{
     font-family: "Montserrat", sans-serif;
 }
@@ -14,10 +15,28 @@ a{
     text-decoration: none;
 }
 
-/*Logo*/
-.logo{
-    width: 20%;
+/*Header Styling*/
+.header-flex{
+    display: flex;
+    justify-content: center;
 }
+.header-name{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+    padding-left: 20px;
+}
+.header-cta{
+    position: fixed;
+    top: 25px;
+    right: 0;
+    z-index: 2;
+    padding-right: 20px;
+}
+
+/*Logo*/
+
 
 .intro{
     margin: auto;
@@ -48,12 +67,11 @@ nav ul{
 }
 nav ul li{
     line-height: 80px;
-    padding: 7px 13px;
 }
 nav ul li a{
     color: #004652;
     font-size: 17px;
-    padding: 7px 13px;
+    padding: 7px 5px;
 }
 nav ul li a:hover{
     border-bottom: solid 2px #004652;
@@ -68,12 +86,15 @@ nav ul li a:hover{
     cursor: pointer;
     display: none;
 }
+#check{
+    display: none;
+}
 
-/*Two Items flex*/
-.flex-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*Sticky position*/
+.pos-sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 /*Buttons stylings*/
@@ -121,4 +142,9 @@ nav ul li a:hover{
 /*white-fonts*/
 .fff{
     color: #fff;
+}
+
+/*white background*/
+.bk-fff{
+    background-color: #fff
 }
