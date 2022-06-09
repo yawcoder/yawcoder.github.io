@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&family=Signika+Negative:wght@500&family=Ubuntu:wght@500&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +6,14 @@
     list-style: none;
     box-sizing: border-box;
 }
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
 /*Logo*/
 .logo{
     width: 20%;
@@ -25,6 +34,39 @@
 .intro section h1 span{
     font-weight: bold;
     text-decoration: underline;
+}
+
+/*Navigation bar Stying*/
+nav{
+    height: 80px;
+    width: 50%;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    line-height: 80px;
+    padding: 7px 13px;
+}
+nav ul li a{
+    color: #004652;
+    font-size: 17px;
+    padding: 7px 13px;
+}
+nav ul li a:hover{
+    border-bottom: solid 2px #004652;
+    color: #004652;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #0558aa;
+    margin: auto;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
 /*Two Items flex*/
