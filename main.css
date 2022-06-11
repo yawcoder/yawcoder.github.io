@@ -14,6 +14,12 @@ body{
 a{
     text-decoration: none;
 }
+header{
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+}
 
 /*Header Styling*/
 .header-flex{
@@ -21,11 +27,19 @@ a{
     justify-content: center;
 }
 .header-name{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #004652;
+    border-radius: 5px;
+    padding: 7px 13px;
+    text-align: center;
     position: fixed;
     top: 20px;
     left: 0;
     z-index: 2;
-    padding-left: 20px;
+    margin-left: 20px;
+}
+header div div h2{
+    font-weight: bold;
 }
 .header-cta{
     position: fixed;
@@ -33,18 +47,19 @@ a{
     right: 0;
     z-index: 2;
     padding-right: 20px;
+    text-align: center;
 }
-
-/*Logo*/
 
 
 .intro{
-    margin: auto;
+    margin: 2rem auto;
     width: 50%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px 13px;
 }
-.intro section{
-    margin-top: 7rem;
-}
+
 .intro section button{
     display: block;
     margin: auto;
@@ -55,9 +70,38 @@ a{
     text-decoration: underline;
 }
 
+
+@media(max-width: 763px){
+    .header-name{
+        position: relative;
+        z-index: 0;
+        font-size: 1.2rem;
+    }
+    header div div h2{
+        font-size: 2.5rem;
+    }
+    header div div img{
+        display: none;
+    }
+    .header-cta{
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin: 25px auto;
+        font-size: 1.2rem;
+    }
+    .header-flex{
+        display: block;
+    }
+    .intro{
+        width: 90%;
+        margin-top: 100px;
+    }
+}
+
 /*Navigation bar Stying*/
 nav{
-    height: 80px;
+    height: 100px;
     width: 50%;
     margin: auto;
 }
@@ -66,7 +110,7 @@ nav ul{
     justify-content: space-evenly;
 }
 nav ul li{
-    line-height: 80px;
+    line-height: 100px;
 }
 nav ul li a{
     color: #004652;
@@ -78,16 +122,65 @@ nav ul li a:hover{
     color: #004652;
 }
 .checkbtn{
-    font-size: 30px;
+    font-size: 50px;
     color: #0558aa;
     margin: auto;
-    line-height: 80px;
-    margin-right: 40px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    display: none;
+}
+.check-close{
+    font-size: 50px;
+    color: #0558aa;
+    margin: auto;
+    text-align: center;
+    line-height: 100px;
     cursor: pointer;
     display: none;
 }
 #check{
     display: none;
+}
+
+/*Smaller screens and mobile styling for nav*/
+@media(max-width: 763px){
+    .checkbtn{
+        display: block;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 0 !important;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    #check:checked ~ .checkbtn{
+        display: none;
+    }
+    #check:checked ~ .check-close{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+    }
 }
 
 /*Sticky position*/
