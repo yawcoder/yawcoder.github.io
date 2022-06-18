@@ -8,11 +8,11 @@
 }
 
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 header{
     background-image: url(/images/header.png);
@@ -30,10 +30,10 @@ header{
     background-color: rgba(255, 255, 255, 0.5);
     color: #004652;
     border-radius: 5px;
-    padding: 5px 13px;
+    padding: 5px 13px 0px 13px;
     text-align: center;
     position: fixed;
-    top: 15px;
+    top: 10px;
     left: 0;
     z-index: 2;
     margin-left: 20px;
@@ -208,8 +208,17 @@ nav ul li a:hover{
 .card{
     height: 100%;
 }
-
-
+.card-title{
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 7px 13px;
+}
+.project-header{
+    text-align: center;
+    padding: 7px 13px;
+    font-weight: bold;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+}
 
 
 

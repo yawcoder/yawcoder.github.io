@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <!--Header Section-->
     <header class="pt-3 container-fluid">
         <div class="header-flex">
             <div class="header-name">
@@ -33,7 +34,8 @@
         </div>
     </header>
     <main>
-        <div class="pos-sticky bg-fff">
+        <!--Navigation Bar-->
+        <div class="pos-sticky bg-fff" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
             <nav>
                 <button class="nav-cta cta">Contact Me</button>
                 <input type="checkbox" id="check">
@@ -48,26 +50,44 @@
             </nav>
         </div>
         <!--Projects section-->
-        <section class="container-fluid row mt-5 mb-5 project-sec">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Treehouse</h5>
-                      <p class="card-text">This is a clone of <a href="https://teamtreehouse.com/techdegree" target="_blank">Treehouse techdegree page</a>. I was so blown away by the features and responsiveness of the page that I decided to build a similar page.</p>
-                      <a href="https://yawcoder.github.io/treehouse" class="btn btn-primary">View Project</a>
+        <section class="container mt-5 mb-5">
+            <h2 class="mb-5 project-header">Projects</h2>
+            <div class="row project-sec">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="images/treehouse.png" class="card-img-top" alt="treehouse">
+                        <div class="card-body">
+                            <h5 class= "card-title">Treehouse</h5>
+                            <p class="card-text">This is a clone of <a href="https://teamtreehouse.com/techdegree" target="_blank">Treehouse techdegree page</a>. I was so blown away by the features and responsiveness of the page that I decided to build a similar page.</p>
+                            <button class="cta"><a href="https://yawcoder.github.io/treehouse" target="_blank">View Project</a></button>
+                        </div>
                     </div>
-                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="images/four-card-featured.png" class="card-img-top" alt="four-card-featured">
+                        <div class="card-body">
+                            <h5 class="card-title">Four Card Feature Page</h5>
+                            <p class="card-text">This is a page you can use to showcase the features of your product or any kind of services you offer. Just try to adjust your browser window and see how well the page responds.</p>
+                            <button class="cta"><a href="https://yawcoder.github.io/four-card-feature-section" target="_blank">View Project</a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a page you can use to showcase the features of your product or any kind of services you offer. Just try to adjust your browser window and see how well the page responds.</p>
-                      <a href="https://yawcoder.github.io/four-card-feature-section" class="btn btn-primary">View Project</a>
-                    </div>
-                  </div>
+        </section>
+            <!--Promo Section with button-->
+        <section class="mt-5">
+            <div class="container">
+                <p>Some text to Draw Attention</p>
+                <button class="cta">Call to Action</button>
+            </div>
+        </section>
+        <!--Blog Post section-->
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
             </div>
         </section>
     </main>
