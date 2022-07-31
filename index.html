@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To My Portfolio Site | YawCoder</title>
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/fav.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/00f365168b.js" crossorigin="anonymous"></script>
@@ -13,88 +13,75 @@
 </head>
 <body>
 
-    <!-----------------------Header Section------------------------>
-    <header class="pt-3 container-fluid">
-        <div class="header-flex">
-            <div class="header-name">
-                <h2>YawCoder</h2>
-                <p>FRONT END DEVELOPER</p>
-            </div>
-            <div>
-                <img src="images/favicon.png" alt="YawCoder logo" width="100">
-            </div>
-            <div class="header-cta">
-                <button class="cta"><a href="#">Contact Me</a></button>
-            </div>
-        </div>
-        <div class="intro">
-            <section>
-                <h1 align="center" >Hey! My Name Is <span><br>Isaac Anim</span> And I Love Building Websites</h1>
-                <h3 align="center" class="mt-3">I am a Front End Web Developer with Experience in HTML, CSS, JavaScript</h3>
-            </section>
-        </div>
-    </header>
-    <main>
-
         <!-------------------Navigation Bar---------------------->
-        <div class="pos-sticky bg-fff" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
-            <nav>
-                <button class="nav-cta cta">Contact Me</button>
+    <nav>
+        <div class="nav-center">
+            <!--nav header-->
+            <div class="nav-header">
+                <img src="images/logo.png" class="logo" alt="logo">
                 <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-                <label for="check" class="check-close"><i class="fa-solid fa-xmark"></i></label>
-                <ul>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Free Stuff</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Me</a></li>
-                </ul>
-            </nav>
+                <label for="check" class="nav-toggle"><i class="fas fa-bars"></i></label>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+                <div class="links-social">
+                    <li>
+                        <a href="https://www.github.com/yawcoder" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.github.com/yawcoder" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <!-----------------Projects section------------------>
-        <section class="container mt-5 mb-5">
-            <h1 class="mb-5 project-header">Projects</h1>
-            <div class="row project-sec">
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="images/treehouse.png" class="card-img-top" alt="treehouse">
-                        <div class="card-body">
-                            <h5 class= "card-title">Treehouse</h5>
-                            <p class="card-text">This is a clone of <a href="https://teamtreehouse.com/techdegree" target="_blank">Treehouse techdegree page</a>. I was so blown away by the features and responsiveness of the page that I decided to build a similar page.</p>
-                            <button class="cta"><a href="https://yawcoder.github.io/treehouse" target="_blank">View Project</a></button>
-                        </div>
+    <!----------------- homepage content ------------------>
+    <main>
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="" alt="YawCoder" class="image">
+                    </div>
+                    <div class="col-md-8">
+                        <header><h2>Hi, I'm <strong>Isaac Anim</strong></h2></header>
+                        <p></p>
+                        <a href="#"><button class="cta">Learn About What I Do</button></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="images/fourcardpage.png" class="card-img-top" alt="fourcardpage">
-                        <div class="card-body">
-                            <h5 class="card-title">Four Card Feature Page</h5>
-                            <p class="card-text">This is a page you can use to showcase the features of your product or any kind of services you offer. Just try to adjust your browser window and see how well the page responds.</p>
-                            <button class="cta"><a href="https://yawcoder.github.io/four-card-feature-section" target="_blank">View Project</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-            <!------------------Promo Section with button------------------>
-        <section class="mt-5">
-            <div class="container">
-                <p>Some text to Draw Client Attention</p>
-                <button class="cta">Call to Action</button>
-            </div>
-        </section>
-
-        <!------------------------Blog Post section------------------------->
-        <section class="mt-5">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
