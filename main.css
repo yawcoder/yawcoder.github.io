@@ -147,6 +147,15 @@ p {
     width: 95vw;
   }
 }
+
+.underline {
+  height: 0.2rem;
+  width: 17rem;
+  background-color: rgba(255, 98, 45, 1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* main {
   min-height: 100vh;
   display: grid;
@@ -184,7 +193,7 @@ nav {
   transform: rotate(90deg);
 }
 .logo {
-  height: 40px;
+  height: 50px;
 }
 .links a {
   color: var(--clr-grey-3);
@@ -271,9 +280,51 @@ nav {
   }
 }
 
+.intro-section{
+  padding: 10em 0 10em 0;
+  box-shadow: var(--light-shadow);
+}
 
+.intro-image{
+  display: block;
+  margin: auto;
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  border: 1px solid var(--clr-grey-7);
+  background: var(--clr-white);
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: var(--dark-shadow);
+}
+.intro-body{
+  text-align: center;
+}
+.intro-text{
+  font-size: 1.5rem;
+}
 
+@media(max-width: 990px){
+  .intro-image{
+    width: 15em;
+    height: 15em;
+  }
+}
+@media(max-width: 767px){
+  .intro-image{
+    width: 20em;
+    height: 20em;
+  }
+}
 
+#work{
+  background-image: url(images/bg.png);
+  padding: 8em 0 8em 0;
+  text-align: center;
+}
+.work-text{
+  font-size: 1.5rem;
+}
 
 
 /*Buttons stylings*/
@@ -302,7 +353,7 @@ nav {
 }
 .cta{
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 0.6);
+    background-color: #FF622D;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -316,7 +367,8 @@ nav {
     text-decoration: none !important;
 }
 .cta:hover{
-    background-color: rgba(0, 136, 169, 1);
+    background-color: #B23300;
+    transform: scale(1.05);
 }
 
 /*white-fonts*/

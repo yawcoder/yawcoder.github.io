@@ -18,7 +18,7 @@
         <div class="nav-center">
             <!--nav header-->
             <div class="nav-header">
-                <img src="images/logo.png" class="logo" alt="logo">
+                <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
                 <input type="checkbox" id="check">
                 <label for="check" class="nav-toggle"><i class="fas fa-bars"></i></label>
             </div>
@@ -67,20 +67,43 @@
 
     <!----------------- homepage content ------------------>
     <main>
-        <section>
-            <div class="container mt-5">
+        <!-- intro section -->
+        <section id="intro" class="intro-section">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="" alt="YawCoder" class="image">
+                        <div class="image-container">
+                            <img src="images/pic00.jpg" alt="Isaac Anim" class="intro-image">
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <header><h2>Hi, I'm <strong>Isaac Anim</strong></h2></header>
-                        <p></p>
+                    <div class="col-md-8 intro-body">
+                        <header><h1 class="intro-title">Hi, I'm <strong>Isaac Anim</strong></h1></header>
+                        <div class="underline"></div>
+                        <p class="intro-text mt-4">Front End Developer with passion for writing clean code and making beautiful websites.</p>
                         <a href="#"><button class="cta">Learn About What I Do</button></a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- work section -->
+        <section id="work">
+            <div class="container">
+                <header>
+                    <h2 class="work-title">Here Are the Stuffs I do.</h2>
+                    <div class="underline"></div>
+                    <p class="work-text mt-4">I specialise in HTML, CSS and JavaScript</p>
+                </header>
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </section>
+        <p>Take a closer look, I think you'll like it</p>
     </main>
     <script src="app.js"></script>
 </body>
