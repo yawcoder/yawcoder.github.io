@@ -358,6 +358,9 @@ nav {
   .card{
     margin: 0.5rem 0;
   }
+  .card:hover{
+    transform: none;
+  }
 }
 
 
