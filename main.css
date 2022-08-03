@@ -319,12 +319,44 @@ nav {
 
 #work{
   background-image: url(images/bg.png);
-  padding: 8em 0 8em 0;
+  padding: 6em 0 6em 0;
   text-align: center;
 }
 .work-text{
   font-size: 1.5rem;
 }
+
+.card{
+  padding: 1.2rem 0;
+  transition: all 0.3s ease 0s
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card-icon{
+  font-size: 4em;
+  color: #EA8A95;
+  display: flex;
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: center;
+  /* width: 1.5em;
+  height: 1.5em;
+  border: 1px solid var(--clr-grey-7);
+  background: var(--clr-white);
+  border-radius: 50%;
+  box-shadow: var(--dark-shadow); */
+}
+.card-title{
+  font-weight: bold;
+}
+.card-text{
+  margin: 1.5rem 1em;
+}
+
+
+
+
 
 
 /*Buttons stylings*/
