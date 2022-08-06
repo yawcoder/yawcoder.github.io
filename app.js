@@ -13,7 +13,7 @@ navToggle.addEventListener('click', () => {
 
 
 
-
+//Code for appending recent projects to homepage
 const projects = [
     {
         id: 1,
@@ -70,38 +70,45 @@ const project2 = document.querySelector('.project-2');
 const project3 = document.querySelector('.project-3');
 
 window.addEventListener("DOMContentLoaded", () => {
-    project1.innerHTML = displayHomeProjects(projects, 1);
+    let homePageProjects = projects.filter((item) => {
+        return item.id > projects.length-3;
+    });
+    // console.log(homePageProjects);
+    project1.innerHTML = `<a href=${homePageProjects[2].address} target="_blank" class="card">
+                     <img src=${homePageProjects[2].img} alt=${homePageProjects[2].title} class="project-img mb-3">
+                     <h5 class="project-title">${homePageProjects[2].title}</h5>
+                 </a>`;
+    project2.innerHTML = `<a href=${homePageProjects[1].address} target="_blank" class="card">
+                     <img src=${homePageProjects[1].img} alt=${homePageProjects[1].title} class="project-img mb-3">
+                     <h5 class="project-title">${homePageProjects[1].title}</h5>
+                 </a>`;
+    project3.innerHTML = `<a href=${homePageProjects[0].address} target="_blank" class="card">
+                     <img src=${homePageProjects[0].img} alt=${homePageProjects[0].title} class="project-img mb-3">
+                     <h5 class="project-title">${homePageProjects[0].title}</h5>
+                 </a>`;
+
 });
 
-function displayHomeProjects(arr, num){
-
-    return `<a href=${arr[num].address} target="_blank" class="col-md-4 card">
-                <img src=${arr[num].img} alt=${ar[num].title} class="project-img mb-3">
-                <h5 class="project-title">${arr[num].title}</h5>
-            </a>`
-    
-}
 
 
+// functions for displaying projects on projects page
 
-// functions for displaying projects on website
+// const projectsDiv = document.querySelector('.projects-div');
 
-const projectsDiv = document.querySelector('.projects-div');
-
-window.addEventListener("DOMContentLoaded", function () {
-        displayMenuItems(projects)
-    });
+// window.addEventListener("DOMContentLoaded", function () {
+//         displayMenuItems(projects)
+//     });
 
 
-function displayMenuItems(menuItems){
-    let displayMenu = menuItems.map(function (item) {
-      //console.log(item);
+// function displayMenuItems(menuItems){
+//     let displayMenu = menuItems.map(function (item) {
+//       //console.log(item);
   
-      return `<a href=${item.address} target="_blank" class="col-md-4 card">
-                <img src=${item.img} alt=${item.title} class="project-img mb-3">
-                <h5 class="project-title">${item.title}</h5>
-            </a>`;
-    });
-     displayMenu = displayMenu.join("");
-     projectsDiv.innerHTML = displayMenu;
-  };
+//       return `<a href=${item.address} target="_blank" class="col-md-4 card">
+//                 <img src=${item.img} alt=${item.title} class="project-img mb-3">
+//                 <h5 class="project-title">${item.title}</h5>
+//             </a>`;
+//     });
+//      displayMenu = displayMenu.join("");
+//      projectsDiv.innerHTML = displayMenu;
+//   };
