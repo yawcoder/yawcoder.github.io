@@ -74,18 +74,18 @@ window.addEventListener("DOMContentLoaded", () => {
         return item.id > projects.length-3;
     });
     // console.log(homePageProjects);
-    project1.innerHTML = `<a href=${homePageProjects[2].address} target="_blank" class="card">
+    project1.innerHTML = `<div class="card"><a href=${homePageProjects[2].address} target="_blank">
                      <img src=${homePageProjects[2].img} alt=${homePageProjects[2].title} class="project-img mb-3">
                      <h5 class="project-title">${homePageProjects[2].title}</h5>
-                 </a>`;
-    project2.innerHTML = `<a href=${homePageProjects[1].address} target="_blank" class="card">
+                 </a></div>`;
+    project2.innerHTML = `<div class="card"><a href=${homePageProjects[1].address} target="_blank">
                      <img src=${homePageProjects[1].img} alt=${homePageProjects[1].title} class="project-img mb-3">
                      <h5 class="project-title">${homePageProjects[1].title}</h5>
-                 </a>`;
-    project3.innerHTML = `<a href=${homePageProjects[0].address} target="_blank" class="card">
+                 </a></div>`;
+    project3.innerHTML = `<div class="card"><a href=${homePageProjects[0].address} target="_blank">
                      <img src=${homePageProjects[0].img} alt=${homePageProjects[0].title} class="project-img mb-3">
                      <h5 class="project-title">${homePageProjects[0].title}</h5>
-                 </a>`;
+                 </a></div>`;
 
 });
 

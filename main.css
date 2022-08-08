@@ -374,11 +374,11 @@ nav {
 .project-img{
   display: block;
   margin: auto;
-  width: 95%;
+  width: 98%;
   height: auto;
   object-fit: cover;
   border: 1px solid var(--clr-grey-7);
-  background: var(--clr-white);
+  /* background: var(--clr-white); */
   /* margin: 0.5rem; */
   box-shadow: var(--dark-shadow);
 }
