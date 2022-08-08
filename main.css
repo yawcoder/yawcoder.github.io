@@ -408,16 +408,122 @@ nav {
 .promo-section .container h3{
   display: inline-block;
   margin-right: 1.75rem;
+  font-weight: bold;
 }
 @media(max-width: 767px){
   .promo-section{
     padding: 6em 1em;
   }
+  .promo-section .container h3{
+    display: inline-block;
+    margin: auto;
+    font-weight: bold;
+}
 }
 .blog-section{
   padding: 4em 0 4em 0;
   text-align: center;
+
 }
+.blog-text{
+  font-size: 1.5rem;
+}
+
+
+
+
+/* Footer styling */
+.color-bar{
+  display: flex;
+}
+.one{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(11, 136, 195);
+  border-radius: 0px;
+}
+.two{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(0, 211, 119);
+  border-radius: 0px;
+}
+.three{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(0, 185, 80);
+  border-radius: 0px;
+}
+.four{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(255, 210, 71);
+  border-radius: 0px;
+}
+.five{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(255, 152, 0);
+  border-radius: 0px;
+}
+.six{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(255, 70, 79);
+  border-radius: 0px;
+}
+.seven{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(255, 130, 179);
+  border-radius: 0px;
+}
+.eight{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(255, 67, 133);
+  border-radius: 0px;
+}
+.nine{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(164, 125, 204);
+  border-radius: 0px;
+}
+.ten{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(135, 91, 181);
+  border-radius: 0px;
+}
+footer{
+  background-color: #fff;
+  text-align: center;
+}
+.footer-text{
+  margin: auto;
+  /* background-color: #004652; */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.footer-contact{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.footer-icons{
+  font-size: 2rem;
+}
+@media(max-width: 767px){
+  footer{
+    display: block;
+  }
+  .footer-contact{
+    display: block;
+  }
+}
+
 
 
 
