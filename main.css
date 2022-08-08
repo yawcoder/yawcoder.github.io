@@ -388,8 +388,35 @@ nav {
 }
 .project-1 a, .project-2 a, .project-3 a{
   display: block;
-  margin: auto;
-  
+  margin: auto; 
+}
+.promo-section{
+  position: relative;
+  background-image: url(images/overlay.png), url(../../images/promo.jpg);
+  background-size: 192px 192px, cover;
+  background-position: top left, center center;
+  color: #fff;
+  text-align: center;
+  padding: 6em 0;
+}
+.promo-section .container{
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 1px #fff;
+  border-radius: 5px;
+  padding: 2em 0;
+}
+.promo-section .container h3{
+  display: inline-block;
+  margin-right: 1.75rem;
+}
+@media(max-width: 767px){
+  .promo-section{
+    padding: 6em 1em;
+  }
+}
+.blog-section{
+  padding: 4em 0 4em 0;
+  text-align: center;
 }
 
 
