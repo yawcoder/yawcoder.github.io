@@ -170,6 +170,7 @@ Navbar
 nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
+  font-family: "Inconsolata", sans-serif;
 }
 .nav-header {
   display: flex;
