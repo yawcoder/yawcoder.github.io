@@ -171,6 +171,7 @@ nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
   font-family: "Inconsolata", sans-serif;
+  font-weight: bold;
 }
 .nav-header {
   display: flex;
@@ -198,7 +199,7 @@ nav {
 }
 .links a {
   color: var(--clr-grey-3);
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
