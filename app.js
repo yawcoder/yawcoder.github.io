@@ -108,22 +108,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // functions for displaying projects on projects page
 
-// const projectsDiv = document.querySelector('.projects-div');
+const projectsDiv = document.querySelector('.projects-div');
 
-// window.addEventListener("DOMContentLoaded", function () {
-//         displayMenuItems(projects)
-//     });
+window.addEventListener("DOMContentLoaded", function () {
+        displayMenuItems(projects)
+    });
 
 
-// function displayMenuItems(menuItems){
-//     let displayMenu = menuItems.map(function (item) {
-//       //console.log(item);
+function displayMenuItems(menuItems){
+    let displayMenu = menuItems.map(function (item) {
+      //console.log(item);
   
-//       return `<a href=${item.address} target="_blank" class="col-md-4 card">
-//                 <img src=${item.img} alt=${item.title} class="project-img mb-3">
-//                 <h5 class="project-title">${item.title}</h5>
-//             </a>`;
-//     });
-//      displayMenu = displayMenu.join("");
-//      projectsDiv.innerHTML = displayMenu;
-//   };
+      return `<div class=col-md-4><a href=${item.address} target="_blank" class="card">
+                <img src=${item.img} alt=${item.title} class="project-img mb-3">
+                <h5 class="project-title">${item.title}</h5>
+            </a></div>`;
+    });
+     displayMenu = displayMenu.join("");
+     projectsDiv.innerHTML = displayMenu;
+  };

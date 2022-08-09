@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&family=Signika+Negative:wght@500&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nunito&family=Signika+Negative:wght@500&family=Ubuntu:wght@500&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -37,7 +37,7 @@ Variables
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-9: hsl(212, 33%, 94%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
@@ -70,7 +70,7 @@ Global Styles
 }
 body {
   font-family: "Nunito", sans-serif;
-  background: var(--clr-grey-10);
+  background: var(--clr-grey-9);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -374,13 +374,14 @@ nav {
 .project-img{
   display: block;
   margin: auto;
-  width: 98%;
+  width: 100%;
   height: auto;
   object-fit: cover;
-  border: 1px solid var(--clr-grey-7);
+  border-top: 1px solid var(--clr-grey-7);
+  border-bottom: 1px solid var(--clr-grey-7);
   /* background: var(--clr-white); */
   /* margin: 0.5rem; */
-  box-shadow: var(--dark-shadow);
+  /* box-shadow: var(--dark-shadow); */
 }
 .project-title{
   color: black;
@@ -423,7 +424,7 @@ nav {
 .blog-section{
   padding: 4em 0 4em 0;
   text-align: center;
-  background-color: #fff;
+  /* background-color: #fff; */
 
 }
 .blog-text{
@@ -498,7 +499,7 @@ nav {
   border-radius: 0px;
 }
 footer{
-  background-color: #fff;
+  /* background-color: #fff; */
   text-align: center;
 }
 .footer-text{
@@ -523,6 +524,43 @@ footer{
   .footer-contact{
     display: block;
   }
+}
+
+/*******************Styling for projects page  ***************************/
+
+.projects-page-header{
+  text-align: center;
+}
+.projects-page-text{
+  font-size: 1.3rem;
+}
+.projects-div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.projects-div div{
+  margin: 1.0rem 0;
+  text-align: center;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: bold;
+}
+
+/*****************Styling for Contact Page  ***************/
+.contact-page-section{
+  text-align: center;
+}
+.contact-page-section h3{
+  font-weight: bold;
+}
+.contact-page-section p{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+.contact-page-section div a{
+  font-size: 2rem;
+  margin: 0 2rem;
 }
 
 
