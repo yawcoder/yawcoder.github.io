@@ -84,6 +84,7 @@ const project4 = document.querySelector('.project-4');
 const project5 = document.querySelector('.project-5');
 const project6 = document.querySelector('.project-6');
 
+//function for displaying 6 latest projects on homepage
 window.addEventListener("DOMContentLoaded", () => {
     let homePageProjects = projects.filter((item) => {
         return item.id > projects.length-6;
