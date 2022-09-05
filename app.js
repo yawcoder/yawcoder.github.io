@@ -23,9 +23,9 @@ const projects = [
     },
     {
         id: 2,
-        title: "Triple Price Page",
+        title: "Price Page With Toggle",
         img: "./images/triple-price.JPG",
-        address: "https://triple-price-yawcoder.netlify.app"
+        address: "https://price-page-yawcoder.netlify.app/"
     },
     {
         id: 3,
@@ -62,6 +62,18 @@ const projects = [
         title: "Treehouse Clone",
         img: "./images/treehouse.JPG",
         address: "https://treehouse-clone-yawcoder.netlify.app"
+    },
+    {
+        id: 9,
+        title: "Color Flicker",
+        img: "./images/color-flicker.JPG",
+        address: "https://color-flicker-yawcoder.netlify.app/"
+    },
+    {
+        id: 10,
+        title: "Gallery Hover",
+        img: "./images/gallery-hover.JPG",
+        addres: "https://gallery-hover-yawcoder.netlify.app/"
     }
 ];
 
