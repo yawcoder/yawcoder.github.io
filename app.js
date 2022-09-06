@@ -73,7 +73,7 @@ const projects = [
         id: 10,
         title: "Gallery Hover",
         img: "./images/gallery-hover.JPG",
-        addres: "https://gallery-hover-yawcoder.netlify.app/"
+        address: "https://gallery-hover-yawcoder.netlify.app/"
     }
 ];
 
