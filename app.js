@@ -80,6 +80,12 @@ const projects = [
         title: "Counter App",
         img: "./images/counter.JPG",
         address: "https://counter-yawcoder.netlify.app/"
+    },
+    {
+        id: 12,
+        title: "Emoji Rating",
+        img: "./images/emoji.JPG",
+        address: "https://emoji-rating-yawcoder.netlify.app/"
     }
 ];
 
