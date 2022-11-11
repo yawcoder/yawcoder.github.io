@@ -86,6 +86,12 @@ const projects = [
         title: "Emoji Rating",
         img: "./images/emoji.JPG",
         address: "https://emoji-rating-yawcoder.netlify.app/"
+    },
+    {
+        id: 13,
+        title: "Countdown Timer",
+        img: "./images/countdown.JPG",
+        address: "https://new-year-countdown-yawcoder.netlify.app/"
     }
 ];
 
