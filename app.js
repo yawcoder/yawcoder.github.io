@@ -3,11 +3,6 @@ const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.links');
 
 navToggle.addEventListener('click', () => {
-   /*if(!links.classList.contains('show-links')){
-        links.classList.add('show-links');
-    }else{
-        links.classList.remove('show-links');
-    }*/
     links.classList.toggle('show-links');
 });
 
@@ -92,6 +87,12 @@ const projects = [
         title: "Countdown Timer",
         img: "./images/countdown.JPG",
         address: "https://new-year-countdown-yawcoder.netlify.app/"
+    },
+    {
+        id: 14,
+        title: "WASSCE Aggregate Calculator",
+        img: "./images/aggregate-calculator.JPG",
+        address: "https://wassce-aggregate-calculator.netlify.app/"
     }
 ];
 
