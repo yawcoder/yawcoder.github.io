@@ -141,8 +141,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const projectsDiv = document.querySelector('.projects-div');
 
-window.addEventListener("DOMContentLoaded", function () {
-        displayMenuItems(projects)
+window.addEventListener("DOMContentLoaded", () => {
+        displayMenuItems(projects);
     });
 
 
